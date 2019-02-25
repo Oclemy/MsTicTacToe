@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ddd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/comic"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_style"
+            android:fontFamily="@font/comic"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/info"
+            android:textColor="#ff0000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/info"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/table"
+            android:columnCount="3"
+            android:rowCount="3">
+
+            <ImageView
+                android:id="@+id/box1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="0"
+                android:contentDescription="@string/box"
+                android:onClick="marked"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/box2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="0"
+                android:onClick="marked"
+                android:tag="2" />
+
+            <ImageView
+                android:id="@+id/box3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_row="0"
+                android:onClick="marked"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/box4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_row="1"
+                android:onClick="marked"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/box5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_row="1"
+                android:onClick="marked"
+                android:tag="5" />
+
+            <ImageView
+                android:id="@+id/box6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_row="1"
+                android:onClick="marked"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/box7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_row="2"
+                android:onClick="marked"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/box8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_row="2"
+                android:onClick="marked"
+                android:tag="8" />
+
+            <ImageView
+                android:id="@+id/box9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_row="2"
+                android:onClick="marked"
+                android:tag="9" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/grid"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/playAgainBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="reset"
+                android:text="@string/playAgainBtn" />
+
+            <Button
+                android:id="@+id/quiteGameBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/quiteGameBtn"
+                android:onClick="quiteGame"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

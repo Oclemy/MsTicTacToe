@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >-->
+    <!--<stroke-->
+        <!--android:width="3dp"-->
+        <!--android:color="#000000" />-->
+    <!--<padding-->
+        <!--android:left="10dp"-->
+        <!--android:right="10dp"/>-->
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="-4dp"
+    android:insetRight="-4dp">
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <stroke
+                android:width="3dp"
+                android:color="#000000" />
+
+            <padding
+                android:left="12dp"
+                android:right="12dp"/>
+        </shape>
+
+</inset>
+
+
+<!--</shape>-->

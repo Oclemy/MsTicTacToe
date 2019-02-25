@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="tableBackground">Table Background</string>
+    <string name="box">Box</string>
+    <string name="info">Player One move</string>
+    <string name="quiteGameBtn">Quite Game</string>
+    <string name="playAgainBtn">Play Again</string>
+
+</resources>
